@@ -1,0 +1,9 @@
+function position = UpdatePosition(position, ...
+                                   velocity, ...
+                                   slopeAngle, ...
+                                   constants)
+                               
+    change = (velocity * constants.timeStep);
+    position = position + (cosd(slopeAngle) * change);
+    
+end

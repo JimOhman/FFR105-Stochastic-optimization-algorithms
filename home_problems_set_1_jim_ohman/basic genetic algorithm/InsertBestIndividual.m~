@@ -1,0 +1,8 @@
+function population = InsertBestIndividual(population, ...
+                                           previousBestIndividual, ...
+                                           numberOfInsertions)
+    a = population(numberOfInsertions, :);
+    population(numberOfInsertions, :) = previousBestIndividual;
+    disp(population(numberOfInsertions, :))
+    disp(population(1, :)-disp(population(2, :)))
+end
